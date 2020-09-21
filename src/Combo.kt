@@ -1,2 +1,3 @@
-class Combo :Produto {
+class Combo {
+    var listaCombo = mutableListOf<Produto>()
 }
