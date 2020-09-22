@@ -8,4 +8,9 @@ class ComboFamiliar (vararg combo: Combo) : ItemDeCarrinho() {
         listaProdutos.forEach{preco += it.preco}
         preco *= (1 - descontoPromocional)
     }
+
+    override fun toString(): String {
+        return "Combo(${listaProdutos.size} combos)"
+    }
+
 }

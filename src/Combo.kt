@@ -10,4 +10,8 @@ class Combo (vararg produto: Produto) : ItemDeCarrinho()
         preco *= (1 - descontoPromocional)
     }
 
+    override fun toString(): String {
+        return "Combo(${listaProdutos.size} itens)"
+    }
+
 }
