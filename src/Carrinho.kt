@@ -5,9 +5,12 @@ class Carrinho {
         listaDeProdutos.addAll(itemDeCarrinho)
     }
 
-    fun calculaValorTotal() :Double{
+    fun calculaValorTotal() {
         var totalCarrinho: Double =0.00
-        listaDeProdutos.forEach{totalCarrinho += it.preco}
-        return totalCarrinho
+        listaDeProdutos.forEach{
+            totalCarrinho += it.preco
+            println("----- Pedido: $it; Preço: ${it.preco}")
+        }
+        println("Número de pedidos: ${listaDeProdutos.size}; Preço total: $totalCarrinho")
     }
 }
