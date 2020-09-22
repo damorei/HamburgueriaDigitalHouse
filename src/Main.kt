@@ -8,12 +8,12 @@ fun main(){
 
     val mcLancheFeliz : Combo = Combo(cocaCola,maca,bigMac)
     val comboDoDia: Combo = Combo(bigMac,quarteirao,sorvete,cocaCola)
-    carrinho.adicionaProduto(bigMac)
+    carrinho.adicionaItem(bigMac)
     println("Valor dos produtos ${carrinho.calculaValorTotal()}")
-    carrinho.adicionaProduto(mcLancheFeliz)
+    carrinho.adicionaItem(mcLancheFeliz)
     println("Valor dos produtos ${carrinho.calculaValorTotal()}")
     val comboFamiliar : ComboFamiliar = ComboFamiliar(mcLancheFeliz,comboDoDia)
-    carrinho.adicionaProduto(comboFamiliar)
+    carrinho.adicionaItem(comboFamiliar)
     println("Valor dos produtos ${carrinho.calculaValorTotal()}")
 
 }
