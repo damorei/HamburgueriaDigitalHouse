@@ -1,3 +1,3 @@
-data class Produto (val preco: Double, val nome:String){
+data class Produto (override val preco: Double, val nome:String) : ItemDeCarrinho() {
 
 }

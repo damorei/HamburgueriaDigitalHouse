@@ -1,8 +1,8 @@
 class Carrinho {
-    var listaDeProdutos = mutableListOf<Produto>()
+    var listaDeProdutos = mutableListOf<ItemDeCarrinho>()
 
-    fun adicionaProduto(produto: Produto){
-        listaDeProdutos.add(produto)
+    fun adicionaProduto(itemDeCarrinho: ItemDeCarrinho){
+        listaDeProdutos.add(itemDeCarrinho)
     }
 
     fun calculaValorTotal() :Double{
